@@ -10,15 +10,55 @@
     <header class="headerBar"><h1>Schaden-Flick:</h1>
         <h2>the experience of pleasure, joy, and self-satisfaction that comes from exposing others to awful examples of media; especially bad and cult films.</h2>
     </header>
-    <div class="main container">
-        <form action="">
+    <div class="mainContainer">
+        <form class="pickYourPoison"action="">
             <fieldset>
     
             <legend>Portal to Suffering</legend>
-            
-                <p>Do you hate your friends?</p>
-                <input type="checkbox" checked name="yes" value="userAnswer"> Yes
-                <input type="checkbox" name="no" value="userAnswer"> No
+        
+
+            <label for="genre-Select"><p>Choose a genre?</p></label>
+             
+                <select name="genres" id="genre-select">
+                    <option id="28" value="action">Action</option>
+                    <option id="12" value="adventure">Adventure</option>
+                    <option id="16" value="animation">Animation</option>
+                    <option id="35" value="comedy">Comedy</option>
+                    <option id="80" value="crime">Crime</option>
+                    <option id="99" value="documentary">Documentary</option>
+                    <option id="18" value="drama">Drama</option>
+                    <option id="10751" value="family">Family</option>
+                    <option id="14" value="fantasy">Fantasy</option>
+                    <option id="36" value="history">History</option>
+                    <option id ="27"value="horror">Horror</option>
+                    <option id="10402" value="music">Music</option>
+                    <option id="9648"value="mystery">Mystery</option>
+                    <option id="10749" value="romance">Romance</option>
+                    <option id="878" value="scienceFiction">Science Fiction</option>
+                    <option id="10770" value="tvMovie">TV Movie</option>
+                    <option id="53" value="thriller">Thriller</option>
+                    <option id="10752" value="war">War</option>
+                    <option id="37" value="western">Western</option>
+                    <option id="0" value="noGenre">None</option>
+                </select>
+
+                <p>Audio?</p>
+                <select name="language" id="language-select">
+                        <option id="0" value="None">None</option>
+                        <option id="englishOnly" value="english">English</option>
+                        <option id="sub" value="subbbedA">Subbed</option>
+                        <option id="foreignLanguage" value="foreignLA">Foreign(Idl this)</option><br>
+                </select>
+
+            <p>What do we feel like tonight?</p>
+            <input class="queries" value="vampires"type="text">
+
+            <!-- <p>Set a limit?</p>
+            <input type="text" name="limitSet" value=""><br> -->
+<!--             
+            <p>Do you hate your friends?</p>
+            <input type="checkbox" checked name="yes" value="userAnswer"> Yes
+            <input type="checkbox" name="no" value="userAnswer"> No --> -->
             </fieldset>
             <input type="submit" value="Lead me to my fate!">
         </form>
