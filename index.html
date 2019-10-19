@@ -42,26 +42,20 @@
                     <option id="0" value="noGenre">None</option>
                 </select>
 
-                <p>Audio?</p>
-                <select name="language" id="language-select">
-                        <option id="0" value="None">None</option>
-                        <option id="englishOnly" value="english">English</option>
-                        <option id="sub" value="subbbedA">Subbed</option>
-                        <option id="foreignLanguage" value="foreignLA">Foreign(Idl this)</option><br>
+                <p>Language?</p>
+
+                <select class="chooseLanguage" name="language" id="language-select">
+                        <option id="english" value="en">English</option>
+                        <option id="french" value="fr">French</option>
+                        <option id="german" value="de">German</option>
                 </select>
-
-            <p>What do we feel like tonight?</p>
-            <input class="queries" value="vampires"type="text">
-
-            <!-- <p>Set a limit?</p>
-            <input type="text" name="limitSet" value=""><br> -->
-<!--             
-            <p>Do you hate your friends?</p>
-            <input type="checkbox" checked name="yes" value="userAnswer"> Yes
-            <input type="checkbox" name="no" value="userAnswer"> No --> -->
+            <p>Do you -really- hate your friends?</p>
+            <input type="radio" name="answer" value="yes" checked> Yes
+            <input type="radio" name="answer" value="no"> No
             </fieldset>
             <input type="submit" value="Lead me to my fate!">
         </form>
+<div id="resultsContainer"></div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
