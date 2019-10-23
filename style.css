@@ -1,3 +1,12 @@
+/* font-family: 'Teko', sans-serif;
+font-family: 'Play', sans-serif; 
+font-family: 'Amatic SC', cursive;
+*/
+* {
+    font-family: 'Permanent Marker', cursive;
+}
+
+
 label,
 footer {
     font-family: sans-serif;
@@ -8,6 +17,14 @@ label {
     padding-right: 10px;
 }
 
+h1 {
+    font-size: 30px;
+    letter-spacing: .8em;
+}
+
+h2 {
+    letter-spacing: .2em;
+}
 select {
     font-size: .9rem;
     padding: 2px 5px;
@@ -27,3 +44,50 @@ footer {
     background: center/cover no-repeat url('/media/examples/hamster.jpg');
     position: relative;
 }
+
+.mainView {
+
+}
+
+.typewriter h1 {
+    overflow: hidden; 
+    border-right: .15em solid black;
+    white-space: wrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em; /* Adjust as needed */
+    -webkit-animation: 
+      typing 4s steps(40, end),
+      blink-caret .75s step-end infinite;
+            animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+  .typewriter h2 {
+    /* width: 100vw;
+    height: 100vh; */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid black; /* The typwriter cursor */
+    white-space: wrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    white-space: wrap;
+    -webkit-animation: 
+      typing 5s steps(40, end),
+      blink-caret .75s step-end infinite;
+            animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+  }

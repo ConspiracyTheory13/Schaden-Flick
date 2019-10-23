@@ -1,5 +1,3 @@
-
-const OMDbAPIKey="&apikey=5cb6d69e"
 const MDBKey= "&api_key=b634ceab64cc409d417a98a2cfa729ba";
 
 $(".pickYourPoison").submit(function(event){
@@ -7,7 +5,7 @@ $(".pickYourPoison").submit(function(event){
     let url= 'https://api.themoviedb.org';
     let genre="/3/discover/movie?with_genres="
     let keywords="&with_keywords=" + $(".queries").val();
-    let page="&page="
+    let page="&page=";
     let popularity ="&sort_by=vote_average.asc"
     if ($('input[name=answer]:checked', '.pickYourPoison').val()==='no')
     {
@@ -29,7 +27,22 @@ $(".pickYourPoison").submit(function(event){
 function printResults(resultObject) {
     $("#resultsContainer").empty();
     let data = resultObject.results;
+    let posterUrl = "https://image.tmdb.org/t/p/w500";
     for(let i=0; i < data.length; i++) {
-      $('#resultsContainer').append(data[i].title + '<br>');
+      $('#resultsContainer').append(`
+      <div class="movieSection">
+        <div class="poster">
+          <img src="${posterUrl}${data[i].poster_path}"
+        </div>
+        <div class="title">${data[i].title}</div> 
+        <div class="voteStatistics">Vote Count:${data[i].vote_count}<br>
+        Vote Average:${data[i].vote_average}
+        </div><br> 
+        <div class"movieOverview"> ${data[i].overview} </div>
+        <br>`)
+        
+        console.log(`${posterUrl} + ${data[i].poster_path}`);
     };
     }
+
+//https://www.appcoda.com/tvos-movie-app/
