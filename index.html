@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Schaden-Flick</title>
     <link rel="stylesheet" href="style.css"> 
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Permanent+Marker|Play|Teko&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto+Condensed&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <div class="firstView">
         <header class="headerBar typewriter"><h1>Schaden-Flick:</h1>
             <h1 typewriter>the experience of pleasure, joy, and self-satisfaction that comes from exposing others to awful examples of media; especially bad and cult films.</h1>
+             <h3>Dedicated to the Bad Movie Gang: Brad, Vince, and Sam </h3>
         </header>
     </div>
     <div class="mainContainer">
@@ -22,9 +23,9 @@
             <legend>Portal to Suffering</legend>
         
 
-            <label for="genre-Select"><p>Choose a genre?</p></label>
+            <label for="genre-Select"><p>Select Genre</p></label>
              
-                <select name="genres" id="genre-select">
+                <select class="genreSelect" name="genres" id="genre-select">
                     <option id="28" value="action">Action</option>
                     <option id="12" value="adventure">Adventure</option>
                     <option id="16" value="animation">Animation</option>
@@ -46,7 +47,6 @@
                     <option id="37" value="western">Western</option>
                   </select>
                 <p>Language?</p>
-
                 <select class="chooseLanguage" name="language" id="language-select">
                         <option id="english" value="en">English</option>
                         <option id="french" value="fr">French</option>
@@ -57,9 +57,13 @@
             <input type="radio" name="answer" value="no"> No
 
         </fieldset>
-            <input type="submit" value="Lead me to my fate!">
+            <input class="plotting" type="submit" value="Plotting...">
         </form>
 <div id="resultsContainer"></div>
+<footer>
+    <img class="attributionLogo" src="mdb.png"> 
+    <p class="disclaimer">**This product uses the TMDb API but is not endorsed or certified by TMDb.</p>
+</footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>

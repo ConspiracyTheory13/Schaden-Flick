@@ -1,11 +1,8 @@
-/* font-family: 'Teko', sans-serif;
-font-family: 'Play', sans-serif; 
-font-family: 'Amatic SC', cursive;
-*/
 * {
-    font-family: 'Permanent Marker', cursive;
     background-color:black;
     color: white;
+    box-sizing: border-box;    
+
 }
 
 
@@ -18,7 +15,10 @@ label {
     font-size: 1rem;
     padding-right: 10px;
 }
-
+h1, h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2em;
+}
 h1 {
     font-size: 30px;
     letter-spacing: .8em;
@@ -27,28 +27,67 @@ h1 {
 h2 {
     letter-spacing: .2em;
 }
-select {
-    font-size: .9rem;
-    padding: 2px 5px;
+
+h3 {
+    padding-bottom: 2%;
+    left: 36%;
 }
+
 p {
     font-weight: bold;
+    font-size: 1em;
+}
+
+.genreSelect {
+    font-size: 1.5em;
+}
+
+.chooseLanguage {
+    font-size: 1.5em;
+}
+
+.plotting {
+    margin-top: 2%;
+    width: 20%;
+    font-size: 1em;
+}
+
+.posterImg {
+    width: 14em;
+}
+.pickYourPoison {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    letter-spacing: .2em;
+    font-size: 1.7em;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 footer {
-    font-size: .8rem;
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
+    font-size: 1.5em;
+    padding-top: 5%;
+    bottom: 10%;
+    border-top: white 1px solid;
+    width: 100%
 }
 
-.output {
-    background: center/cover no-repeat url('/media/examples/hamster.jpg');
-    position: relative;
+.disclaimer{
+position: relative;
+left: 25%;
+max-width: 50%;
+font-size: 12px;
 }
 
-.mainView {
+.headerBar {
+    padding-top: 2%;
+}
 
+.movieSection {
+    border: white 3px solid;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 100vw;
 }
 
 .heroImageContainer {
@@ -57,6 +96,7 @@ footer {
 }
 
 .typewriter h1 {
+    font-size: 1.5em;
     overflow: hidden; 
     border-right: .15em solid black;
     white-space: wrap; /* Keeps the content on a single line */
@@ -71,13 +111,11 @@ footer {
   }
 
   .typewriter h2 {
-    /* width: 100vw;
-    height: 100vh; */
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid black; /* The typwriter cursor */
-    white-space: wrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    overflow: hidden; 
+    border-right: .15em solid black; 
+    white-space: wrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em;
     white-space: wrap;
     -webkit-animation: 
       typing 5s steps(40, end),
@@ -87,14 +125,42 @@ footer {
       blink-caret .75s step-end infinite;
   }
 
-  /* The typing effect */
+  .attributionLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+  }
+
   @keyframes typing {
     from { width: 0 }
     to { width: 100% }
   }
   
-  /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: white }
   }
+
+  @media screen and (min-width: 800px) {
+    label {
+        font-size: 1em;
+    }
+    .movieSection {
+        display: inline-block;
+    }
+    .pickYourPoison {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h3 {
+        left: 36%;
+        font-size: 1.5em;
+    }
+    .disclaimer {
+        padding-left: 15%;
+    }
+}
+

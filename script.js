@@ -32,13 +32,14 @@ function printResults(resultObject) {
       $('#resultsContainer').append(`
       <div class="movieSection">
         <div class="poster">
-          <img src="${posterUrl}${data[i].poster_path}"
+          <img class="posterImg" src="${posterUrl}${data[i].poster_path}"
         </div>
         <div class="title">${data[i].title}</div> 
         <div class="voteStatistics">Vote Count:${data[i].vote_count}<br>
         Vote Average:${data[i].vote_average}
         </div><br> 
         <div class"movieOverview"> ${data[i].overview} </div>
+      
         <br>`)
         
         console.log(`${posterUrl} + ${data[i].poster_path}`);
