@@ -4,6 +4,8 @@ font-family: 'Amatic SC', cursive;
 */
 * {
     font-family: 'Permanent Marker', cursive;
+    background-color:black;
+    color: white;
 }
 
 
@@ -49,6 +51,11 @@ footer {
 
 }
 
+.heroImageContainer {
+    display: flex;
+    flex-direction: column;
+}
+
 .typewriter h1 {
     overflow: hidden; 
     border-right: .15em solid black;
@@ -89,5 +96,5 @@ footer {
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: black; }
+    50% { border-color: white }
   }
