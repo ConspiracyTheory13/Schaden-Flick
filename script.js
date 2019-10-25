@@ -45,5 +45,3 @@ function printResults(resultObject) {
         console.log(`${posterUrl} + ${data[i].poster_path}`);
     };
     }
-
-//https://www.appcoda.com/tvos-movie-app/
