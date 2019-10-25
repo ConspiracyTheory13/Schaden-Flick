@@ -2,7 +2,6 @@
     background-color:black;
     color: white;
     box-sizing: border-box;    
-
 }
 
 
@@ -12,9 +11,18 @@ footer {
 }
 
 label {
-    font-size: 1rem;
+    font-size: 1em;
     padding-right: 10px;
 }
+
+footer {
+    font-size: 1.5em;
+    padding-top: 5%;
+    bottom: 10%;
+    border-top: white 1px solid;
+    width: 100%
+}
+
 h1, h2 {
     font-family: 'Permanent Marker', cursive;
     font-size: 2em;
@@ -28,7 +36,7 @@ h2 {
     letter-spacing: .2em;
 }
 
-h3 {
+.dedication {
     padding-bottom: 2%;
     left: 36%;
 }
@@ -64,14 +72,6 @@ p {
     margin-bottom: 2%;
 }
 
-footer {
-    font-size: 1.5em;
-    padding-top: 5%;
-    bottom: 10%;
-    border-top: white 1px solid;
-    width: 100%
-}
-
 .disclaimer{
 position: relative;
 left: 25%;
@@ -99,9 +99,9 @@ font-size: 12px;
     font-size: 1.5em;
     overflow: hidden; 
     border-right: .15em solid black;
-    white-space: wrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .1em; /* Adjust as needed */
+    white-space: wrap;
+    margin: 0 auto; 
+    letter-spacing: .1em; 
     -webkit-animation: 
       typing 4s steps(40, end),
       blink-caret .75s step-end infinite;
@@ -155,7 +155,7 @@ font-size: 12px;
 }
 
 @media screen and (min-width: 1200px) {
-    h3 {
+    .dedication{
         left: 36%;
         font-size: 1.5em;
     }

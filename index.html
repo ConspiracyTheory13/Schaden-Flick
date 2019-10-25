@@ -13,18 +13,13 @@
     <div class="firstView">
         <header class="headerBar typewriter"><h1>Schaden-Flick:</h1>
             <h1 typewriter>the experience of pleasure, joy, and self-satisfaction that comes from exposing others to awful examples of media; especially bad and cult films.</h1>
-             <h3>Dedicated to the Bad Movie Gang: Brad, Vince, and Sam </h3>
+                <h2 class="dedication">Dedicated to the Bad Movie Gang: Brad, Vince, and Sam </h2>
         </header>
     </div>
-    <div class="mainContainer">
-        <form class="pickYourPoison"action="">
-            <fieldset>
-    
+    <form class="pickYourPoison"action="">
+        <fieldset>            
             <legend>Portal to Suffering</legend>
-        
-
             <label for="genre-Select"><p>Select Genre</p></label>
-             
                 <select class="genreSelect" name="genres" id="genre-select">
                     <option id="28" value="action">Action</option>
                     <option id="12" value="adventure">Adventure</option>
@@ -47,24 +42,24 @@
                     <option id="37" value="western">Western</option>
                   </select>
                 <p>Language?</p>
-                <label for="language-select"><select class="chooseLanguage" name="language" id="language-select">
+                <label for="language-select">
+                    <select class="chooseLanguage" name="language" id="language-select">
                         <option id="english" value="en">English</option>
                         <option id="french" value="fr">French</option>
                         <option id="german" value="de">German</option>
-                </select></label>
+                    </select
+                ></label>
             <p>Do you -really- hate your friends?</p>
             <label for="yes"><input type="radio" name="answer" value="yes" checked> Yes</label>
             <label for="no"><input type="radio" name="answer" value="no"> No</label>
-
         </fieldset>
             <input class="plotting" type="submit" value="Plotting...">
         </form>
-<div id="resultsContainer"></div>
-<footer>
-    <img class="attributionLogo" alt="The Movie Database logo" src="mdb.png"> 
-    <p class="disclaimer">**This product uses the TMDb API but is not endorsed or certified by TMDb.</p>
-</footer>
-    </div>
+    <div id="resultsContainer"></div>
+    <footer>
+        <img class="attributionLogo" alt="The Movie Database logo" src="mdb.png"> 
+        <p class="disclaimer">**This product uses the TMDb API but is not endorsed or certified by TMDb.</p>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
