@@ -33,7 +33,7 @@ function printResults(resultObject) {
         <div class="voteStatistics">Vote Count:${data[i].vote_count}<br>
         Vote Average:${data[i].vote_average}<br>
         </div> 
-        <div class"movieOverview"> ${data[i].overview}</div>   
+        <div class="movieOverview"> ${data[i].overview}</div>   
         <br>`)
     };
 }
