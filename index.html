@@ -12,53 +12,53 @@
 <body>
     <div class="firstView">
         <header class="headerBar typewriter"><h1>Schaden-Flick:</h1>
-            <h1 class="typewriter">the experience of pleasure, joy, and self-satisfaction that comes from exposing others to awful examples of media; especially bad and cult films.</h1>
+            <h1 typewriter>the experience of pleasure, joy, and self-satisfaction that comes from exposing others to awful examples of media; especially bad and cult films.</h1>
                 <h2 class="dedication">Dedicated to the Bad Movie Gang: Brad, Vince, and Sam </h2>
         </header>
     </div>
-    <form class="pickYourPoison"action="/action_page.php">
+    <form class="pickYourPoison" action="/action_page.php">
         <fieldset>            
             <legend >Portal to Suffering</legend>
-            <label for="Select Genre"><p>Select Genre</p>
-                <select class="dropdownMenu"name="genres"id="genre-select">
-                    <option label for="action"id="28"value="action">Action</option>
-                    <option id="12"value="adventure">Adventure</option>
-                    <option id="16"value="animation">Animation</option>
-                    <option id="35"value="comedy">Comedy</option>
-                    <option id="80"value="crime">Crime</option>
-                    <option id="99"value="documentary">Documentary</option>
-                    <option id="18"value="drama">Drama</option>
-                    <option id="10751"value="family">Family</option>
-                    <option id="14"value="fantasy">Fantasy</option>
-                    <option id="36"value="history">History</option>
+            <label id="selectGenre" for="selectGenre"><p>Select Genre</p>
+                <select class="dropdownMenu" name="genres" id="genre-select">
+                    <option id="28" value="action">Action</option>
+                    <option id="12" value="adventure">Adventure</option>
+                    <option id="16" value="animation">Animation</option>
+                    <option id="35" value="comedy">Comedy</option>
+                    <option id="80" value="crime">Crime</option>
+                    <option id="99" value="documentary">Documentary</option>
+                    <option id="18" value="drama">Drama</option>
+                    <option id="10751" value="family">Family</option>
+                    <option id="14" value="fantasy">Fantasy</option>
+                    <option id="36" value="history">History</option>
                     <option id ="27"value="horror">Horror</option>
-                    <option id="10402"value="music">Music</option>
+                    <option id="10402" value="music">Music</option>
                     <option id="9648"value="mystery">Mystery</option>
-                    <option id="10749"value="romance">Romance</option>
-                    <option id="878"value="scienceFiction">Science Fiction</option>
-                    <option id="10770"value="tvMovie">TV Movie</option>
-                    <option id="53"value="thriller">Thriller</option>
-                    <option id="10752"value="war">War</option>
-                    <option id="37"value="western">Western</option>
+                    <option id="10749" value="romance">Romance</option>
+                    <option id="878" value="scienceFiction">Science Fiction</option>
+                    <option id="10770" value="tvMovie">TV Movie</option>
+                    <option id="53" value="thriller">Thriller</option>
+                    <option id="10752" value="war">War</option>
+                    <option id="37" value="western">Western</option>
                   </select>
             </label>
                 <p>Language?</p>
                 <label for="language-select">
-                    <select class="dropdownMenu"name="language"id="language-select">
-                        <option id="english"value="en">English</option>
-                        <option id="french"value="fr">French</option>
-                        <option id="german"value="de">German</option>
-                    </select
-                ></label>
+                    <select class="dropdownMenu" name="language" id="language-select">
+                        <option id="english" value="en">English</option>
+                        <option id="french" value="fr">French</option>
+                        <option id="german" value="de">German</option>
+                    </select>
+                </label>
             <p>Do you -really- hate your friends?</p>
-            <label for="yes"><input type="radio"name="answer"value="yes"checked>Yes</label>
-            <label for="no"><input type="radio"name="answer"value="no"onclick="alert('Are you sure? If you select no you\'ll be looking up good movies instead and spitting DIRECTLY in the face of my creation =().')";> No</label>
+            <label for="yes"><input type="radio" name="answer" value="yes" checked> Yes</label>
+            <label for="no"><input type="radio" name="answer" value="no" onclick="alert('Are you sure? If you select no you\'ll be looking up good movies instead and spitting DIRECTLY in the face of my creation =().')";> No</label>
         </fieldset>
-            <input class="plotting"type="submit"value="Plotting...">
+            <input class="plotting" type="submit" value="Plotting...">
         </form>
     <div id="resultsContainer"></div>
     <footer>
-        <img class="attributionLogo"alt="The Movie Database logo"src="mdb.png"> 
+        <img class="attributionLogo" alt="The Movie Database logo" src="mdb.png"> 
         <p class="disclaimer">**This product uses the TMDb API but is not endorsed or certified by TMDb.</p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
