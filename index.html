@@ -10,16 +10,14 @@
 
 </head>
 <body>
-    <div class="firstView">
         <header class="headerBar typewriter"><h1>Schaden-Flick:</h1>
             <h1>the experience of pleasure, joy, and self-satisfaction that comes from exposing others to awful examples of media; especially bad and cult films.</h1>
                 <h2 class="dedication">Dedicated to the Bad Movie Gang: Brad, Vince, and Sam </h2>
         </header>
-    </div>
     <form class="pickYourPoison" action="/action_page.php">
         <fieldset>            
             <legend >Portal to Suffering</legend>
-            <label id="selectGenre" for="selectGenre">Select Genre <br>
+            <label for="selectGenre" id="selectGenre">Select Genre <br>
                 <select class="dropdownMenu" name="genres" id="genre-select">
                     <option id="28" value="action">Action</option>
                     <option id="12" value="adventure">Adventure</option>
@@ -51,8 +49,8 @@
                     </select>
                 </label>
             <p>Do you -really- hate your friends?</p>
-            <label for="yes"><input id="yes" type="radio" name="answer" value="yes" checked> Yes</label>
-            <label for="no"><input  id="no" type="radio" name="answer" value="no" onclick="alert('Are you sure? If you select no you\'ll be looking up good movies instead and spitting DIRECTLY in the face of my creation =().')";> No</label>
+            <label for="yes" id="yes"><input id="yes" type="radio" name="answer" value="yes" checked> Yes</label>
+            <label for="no" id="no"><input id="no" type="radio" name="answer" value="no" onclick="alert('Are you sure? If you select no you\'ll be looking up good movies instead and spitting DIRECTLY in the face of my creation =().')">No</label>
         </fieldset>
             <input class="plotting" type="submit" value="Plotting...">
         </form>

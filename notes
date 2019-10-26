@@ -1,0 +1,17 @@
+Errors from: https://validator.w3.org
+
+1. Error one: Error: Bad value https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto+Condensed&display=swap for attribute href on element link: Illegal character in query: | is not allowed.
+
+From line 9, column 5; to line 9, column 122
+
+ss"> ↩    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto+Condensed&display=swap" rel="stylesheet">↩↩</hea
+
+This error is false, the | is part of google font syntax.
+
+2. typewriter has been moved into a class.
+
+3. all spaces between attributes have been removed.
+
+4. action attribute has been added to form.
+
+5. element 
